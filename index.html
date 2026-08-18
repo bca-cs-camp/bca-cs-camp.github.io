@@ -36,15 +36,15 @@
         <p class="hero-text">Your one-stop dashboard for team standings, room locations, challenges, and everything happening at CS Camp.</p>
         <div class="hero-actions">
           <a class="button primary" href="#rankings">View standings <span>↓</span></a>
-          <a class="button secondary" href="#ctf">Open CTF hub <span>↗</span></a>
+          <a class="button secondary" href="#ctf">Links <span>↗</span></a>
         </div>
       </div>
       <aside class="next-up" aria-label="Next event">
         <p class="eyebrow">NEXT UP</p>
         <!-- Edit this card with the current activity. -->
-        <h2>Capture the Flag</h2>
-        <p class="time">9:00 AM — 12:00 PM</p>
-        <p class="location">⌖ Comp Sci · Room 138</p>
+        <h2>Arrival & Check-In</h2>
+        <p class="time">9:00 AM – 9:30 AM</p>
+        <p class="location">⌖ Comp Sci Room</p>
         <a href="#schedule">See full schedule →</a>
       </aside>
       <div class="hero-grid" aria-hidden="true"></div>
@@ -54,51 +54,52 @@
       <div class="section-heading">
         <div>
           <p class="eyebrow">SCOREBOARD</p>
-          <h2 id="rankings-title">Team rankings</h2>
+          <h2 id="rankings-title">Family rankings</h2>
         </div>
         <!-- Update the text below after scoring changes. -->
         <p class="updated">Last updated: <strong>Tuesday, 6:30 AM</strong></p>
       </div>
 
       <div class="score-layout">
-        <div class="podium" aria-label="Top three teams">
-          <!--Team 2-->
+        <div class="podium" aria-label="Top three families">
+          <!--Family 2-->
           <article class="podium-card second">
             <span class="place">02</span><span class="medal">◆</span>
-            <h3>Team 2</h3><p>1,240 pts</p>
+            <h3>Family 2</h3><p>1,240 pts</p>
           </article>
-          <!--Team 1-->
+          <!--Family 1-->
           <article class="podium-card first">
             <span class="place">01</span><span class="medal">★</span>
-            <h3>Team 1</h3><p>1,480 pts</p>
+            <h3>Family 1</h3><p>1,480 pts</p>
           </article>
-          <!--Team 3-->
+          <!--Family 3-->
           <article class="podium-card third">
             <span class="place">03</span><span class="medal">●</span>
-            <h3>Team 3</h3><p>1,105 pts</p>
+            <h3>Family 3</h3><p>1,105 pts</p>
           </article>
         </div>
 
         <div class="score-table-wrap">
           <table class="score-table">
-            <caption class="sr-only">Current CS Camp team rankings</caption>
-            <thead><tr><th>Rank</th><th>Team</th><th>Points</th><th>Trend</th></tr></thead>
+            <caption class="sr-only">Current CS Camp family rankings</caption>
+            <thead><tr><th>Rank</th><th>Family</th><th>Points</th></tr></thead>
             <tbody>
-              <!-- Add or remove team rows as needed. data-team makes the search work. -->
-              <tr data-team="Team 1"><td><span class="rank rank-one">1</span></td><td><strong>Team 1</strong></td><td>1,480</td><td><span class="trend up">↑ 2</span></td></tr>
-              <tr data-team="Team 2"><td><span class="rank">2</span></td><td><strong>Team 2</strong></td><td>1,240</td><td><span class="trend up">↑ 1</span></td></tr>
-              <tr data-team="Team 3"><td><span class="rank">3</span></td><td><strong>Team 3</strong></td><td>1,105</td><td><span class="trend down">↓ 1</span></td></tr>
-              <tr data-team="Team 4"><td><span class="rank">4</span></td><td><strong>Team 4</strong></td><td>980</td><td><span class="trend flat">—</span></td></tr>
-              <tr data-team="Team 5"><td><span class="rank">5</span></td><td><strong>Team 5</strong></td><td>875</td><td><span class="trend down">↓ 2</span></td></tr>
+              <!-- Add or remove family rows as needed. data-team makes the search work. -->
+              <tr data-team="Family 1"><td><span class="rank rank-one">1</span></td><td><strong>Family 1</strong></td><td>1,480</td></tr>
+              <tr data-team="Family 2"><td><span class="rank">2</span></td><td><strong>Family 2</strong></td><td>1,240</td></tr>
+              <tr data-team="Family 3"><td><span class="rank">3</span></td><td><strong>Family 3</strong></td><td>1,105</td></tr>
+              <tr data-team="Family 4"><td><span class="rank">4</span></td><td><strong>Family 4</strong></td><td>980</td></tr>
+              <tr data-team="Family 5"><td><span class="rank">5</span></td><td><strong>Family 5</strong></td><td>875</td></tr>
+              <tr data-team="Family 6"><td><span class="rank">6</span></td><td><strong>Family 6</strong></td><td>760</td></tr>
             </tbody>
           </table>
-          <p id="score-empty" class="empty-state" hidden>No matching team found.</p>
+          <p id="score-empty" class="empty-state" hidden>No matching family found.</p>
         </div>
       </div>
       <div class="score-controls">
-        <label for="team-search" class="sr-only">Find a team</label>
-        <input id="team-search" type="search" placeholder="Find your team..." autocomplete="off">
-        <p>Points are awarded through challenges, teamwork, and camp spirit.</p>
+        <label for="team-search" class="sr-only">Find a family</label>
+        <input id="team-search" type="search" placeholder="Find your family..." autocomplete="off">
+        <p>Points are awarded through challenges and teamwork.</p>
       </div>
     </section>
 
@@ -117,23 +118,49 @@
     </section>
 
     <section id="ctf" class="section resources-section" aria-labelledby="ctf-title">
-      <div class="section-heading"><div><p class="eyebrow">READY, SET, HACK*</p><h2 id="ctf-title">CTF &amp; camp links</h2></div><p class="section-note">*Ethically, of course.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">READY, SET, HACK*</p><h2 id="ctf-title">Camp links</h2></div><p class="section-note">*Ethically, of course.</p></div>
       <div class="resource-grid">
         <!-- Replace each # with the actual URL. These open in a new tab. -->
-        <a class="resource-card ctf-card" href="#" target="_blank" rel="noopener"><span class="resource-icon">⚑</span><div><p class="room-type">CHALLENGE PLATFORM</p><h3>Open the CTF</h3><p>Find flags, solve challenges, earn points.</p></div><span class="arrow">↗</span></a>
-        <a class="resource-card" href="#" target="_blank" rel="noopener"><span class="resource-icon">▣</span><div><p class="room-type">SHARED DRIVE</p><h3>Camp materials</h3><p>Slides, guides, and project files.</p></div><span class="arrow">↗</span></a>
+        <a class="resource-card ctf-card" href="#" target="_blank" rel="noopener"><span class="resource-icon">⚑</span><div><p class="room-type">CHALLENGE PLATFORM</p><h3>Open the Hackathon</h3><p>Build, solve challenges, earn points.</p></div><span class="arrow">↗</span></a>
+        <a class="resource-card" href="#" target="_blank" rel="noopener"><span class="resource-icon">▣</span><div><p class="room-type">SHARED DRIVE</p><h3>Camp materials</h3><p>Slides, forms, and project files.</p></div><span class="arrow">↗</span></a>
       </div>
     </section>
 
     <section id="schedule" class="section schedule-section" aria-labelledby="schedule-title">
-      <div class="section-heading"><div><p class="eyebrow">TODAY AT CAMP</p><h2 id="schedule-title">Schedule</h2></div><p class="section-note">Saturday · August 00</p></div>
-      <!-- Replace these sample events with your actual schedule. -->
-      <ol class="timeline">
-        <li><time>09:00</time><div><h3>Welcome &amp; kickoff</h3><p>Camp Central · Room 101</p></div></li>
-        <li><time>10:00</time><div><h3>Build workshop</h3><p>Maker Studio · Room 118</p></div></li>
-        <li class="current"><time>14:00</time><div><h3>Capture the Flag</h3><p>Innovation Lab · Room 204</p></div><span>NOW</span></li>
-        <li><time>16:15</time><div><h3>Team demos &amp; awards</h3><p>Camp Central · Room 101</p></div></li>
-      </ol>
+      <div class="section-heading"><div><p class="eyebrow">CAMP SCHEDULE</p><h2 id="schedule-title">Schedule</h2></div><p class="section-note">August 20–21</p></div>
+
+      <div class="schedule-controls" aria-label="Schedule day navigation">
+        <button class="schedule-arrow" id="schedule-previous" type="button" aria-label="Show Thursday's schedule" disabled>←</button>
+        <p id="schedule-status" aria-live="polite">Day 1 of 2</p>
+        <button class="schedule-arrow" id="schedule-next" type="button" aria-label="Show Friday's schedule">→</button>
+      </div>
+
+      <div class="schedule-day" id="schedule-day-1">
+        <h3 class="schedule-day-title">Thursday, August 20 <span>· Day 1</span></h3>
+        <ol class="timeline">
+          <li><time>09:00 AM–09:30 AM</time><div><h3>Arrival &amp; Check-In</h3></div></li>
+          <li><time>09:30 AM–10:00 AM</time><div><h3>Morning Icebreakers</h3></div></li>
+          <li><time>10:00 AM–10:30 AM</time><div><h3>Git &amp; GitHub Setup</h3></div></li>
+          <li><time>10:30 AM–11:30 AM</time><div><h3>Scavenger Hunt</h3></div></li>
+          <li><time>11:30 AM–12:30 PM</time><div><h3>Lunch &amp; Free Time</h3></div></li>
+          <li><time>12:30 PM–02:00 PM</time><div><h3>Lessons (Session 1)</h3></div></li>
+          <li><time>02:00 PM–02:40 PM</time><div><h3>Cupstacking/Rubik's Cubes</h3></div></li>
+          <li><time>02:40 PM–03:00 PM</time><div><h3>Clean-Up, Wrap-Up &amp; Sign-Out</h3></div></li>
+        </ol>
+      </div>
+
+      <div class="schedule-day" id="schedule-day-2" hidden>
+        <h3 class="schedule-day-title">Friday, August 21 <span>· Day 2</span></h3>
+        <ol class="timeline">
+          <li><time>09:00 AM–09:30 AM</time><div><h3>Arrival &amp; Check-In</h3></div></li>
+          <li><time>09:30 AM–10:15 AM</time><div><h3>Free Time</h3></div></li>
+          <li><time>10:15 AM–11:30 AM</time><div><h3>Jeopardy</h3></div></li>
+          <li><time>11:30 AM–12:30 PM</time><div><h3>Lunch &amp; Free Time</h3></div></li>
+          <li><time>12:30 PM–02:00 PM</time><div><h3>Lessons (Session 2)</h3></div></li>
+          <li><time>02:00 PM–02:45 PM</time><div><h3>Hackathon Presentations</h3></div></li>
+          <li><time>02:45 PM–03:00 PM</time><div><h3>Clean-Up, Wrap-Up &amp; Sign-Out</h3></div></li>
+        </ol>
+      </div>
     </section>
   </main>
 

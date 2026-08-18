@@ -15,15 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (menuButton) menuButton.textContent = 'Menu';
   }));
 
-  document.querySelectorAll('.room-more').forEach(button => {
-    button.addEventListener('click', () => {
-      const card = button.closest('.room-card');
-      const open = card.classList.toggle('open');
-      button.setAttribute('aria-expanded', String(open));
-      button.setAttribute('aria-label', `${open ? 'Hide' : 'Show'} ${card.querySelector('h3').textContent} details`);
-    });
-  });
-
   const search = document.querySelector('#team-search');
   const rows = [...document.querySelectorAll('.score-table tbody tr')];
   const emptyState = document.querySelector('#score-empty');

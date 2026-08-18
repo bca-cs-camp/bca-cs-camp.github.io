@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="CS Camp headquarters: live team standings, room details, CTF access, and camp resources.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <title>CS Camp | HQ</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,17 +66,17 @@
           <!--Family 2-->
           <article class="podium-card second">
             <span class="place">02</span><span class="medal">◆</span>
-            <h3>Family 2</h3><p>1,240 pts</p>
+            <h3>Family 2</h3><p>0 pts</p>
           </article>
           <!--Family 1-->
           <article class="podium-card first">
             <span class="place">01</span><span class="medal">★</span>
-            <h3>Family 1</h3><p>1,480 pts</p>
+            <h3>Family 1</h3><p>0 pts</p>
           </article>
           <!--Family 3-->
           <article class="podium-card third">
             <span class="place">03</span><span class="medal">●</span>
-            <h3>Family 3</h3><p>1,105 pts</p>
+            <h3>Family 3</h3><p>0 pts</p>
           </article>
         </div>
 
@@ -85,12 +86,12 @@
             <thead><tr><th>Rank</th><th>Family</th><th>Points</th></tr></thead>
             <tbody>
               <!-- Add or remove family rows as needed. data-team makes the search work. -->
-              <tr data-team="Family 1"><td><span class="rank rank-one">1</span></td><td><strong>Family 1</strong></td><td>1,480</td></tr>
-              <tr data-team="Family 2"><td><span class="rank">2</span></td><td><strong>Family 2</strong></td><td>1,240</td></tr>
-              <tr data-team="Family 3"><td><span class="rank">3</span></td><td><strong>Family 3</strong></td><td>1,105</td></tr>
-              <tr data-team="Family 4"><td><span class="rank">4</span></td><td><strong>Family 4</strong></td><td>980</td></tr>
-              <tr data-team="Family 5"><td><span class="rank">5</span></td><td><strong>Family 5</strong></td><td>875</td></tr>
-              <tr data-team="Family 6"><td><span class="rank">6</span></td><td><strong>Family 6</strong></td><td>760</td></tr>
+              <tr data-team="Family 1"><td><span class="rank rank-one">1</span></td><td><strong>Family 1</strong></td><td>0</td></tr>
+              <tr data-team="Family 2"><td><span class="rank">2</span></td><td><strong>Family 2</strong></td><td>0</td></tr>
+              <tr data-team="Family 3"><td><span class="rank">3</span></td><td><strong>Family 3</strong></td><td>0</td></tr>
+              <tr data-team="Family 4"><td><span class="rank">4</span></td><td><strong>Family 4</strong></td><td>0</td></tr>
+              <tr data-team="Family 5"><td><span class="rank">5</span></td><td><strong>Family 5</strong></td><td>0</td></tr>
+              <tr data-team="Family 6"><td><span class="rank">6</span></td><td><strong>Family 6</strong></td><td>0</td></tr>
             </tbody>
           </table>
           <p id="score-empty" class="empty-state" hidden>No matching family found.</p>
@@ -106,14 +107,13 @@
     <section id="rooms" class="section rooms-section" aria-labelledby="rooms-title">
       <div class="section-heading">
         <div><p class="eyebrow">FIND YOUR WAY</p><h2 id="rooms-title">Room details</h2></div>
-        <p class="section-note">Tap a room for details.</p>
       </div>
       <div class="room-grid">
         <!-- Duplicate a room-card to add more rooms. -->
-        <article class="room-card featured-room"><div class="room-number">138a</div><div><p class="room-type">HOME BASE</p><h3>Camp Central</h3><p>Check-in, announcements, and help desk.</p></div><button class="room-more" aria-label="Show Camp Central details">+</button><div class="room-detail">Open all day · Ask staff here for help or lost items.</div></article>
-        <article class="room-card"><div class="room-number">138b</div><div><p class="room-type">CHALLENGE ZONE</p><h3>Innovation Lab</h3><p>CTF, workshops, and team challenges.</p></div><button class="room-more" aria-label="Show Innovation Lab details">+</button><div class="room-detail">Bring your laptop and charger. CTF starts here at 2:00 PM.</div></article>
-        <article class="room-card"><div class="room-number">Lower Cafe</div><div><p class="room-type">CREATE</p><h3>Maker Studio</h3><p>Hardware, design, and creative builds.</p></div><button class="room-more" aria-label="Show Maker Studio details">+</button><div class="room-detail">Staff approval required before using tools or equipment.</div></article>
-        <article class="room-card"><div class="room-number">IDK</div><div><p class="room-type">FOCUS</p><h3>Quiet Corner</h3><p>Study space and mentor office hours.</p></div><button class="room-more" aria-label="Show Quiet Corner details">+</button><div class="room-detail">Please keep conversations low and respect the shared space.</div></article>
+        <article class="room-card featured-room"><div class="room-number">138a</div><div><p class="room-type">HOME BASE</p><h3>Camp Central</h3><p>Check-in, announcements, and help desk.</p></div></article>
+        <article class="room-card"><div class="room-number">138b</div><div><p class="room-type">CHALLENGE ZONE</p><h3>Innovation Lab</h3><p>CTF, workshops, and team challenges.</p></div></article>
+        <article class="room-card"><div class="room-number">Lower Cafe</div><div><p class="room-type">CREATE</p><h3>Maker Studio</h3><p>Hardware, design, and creative builds.</p></div></article>
+        <article class="room-card"><div class="room-number">IDK</div><div><p class="room-type">FOCUS</p><h3>Quiet Corner</h3><p>Study space and mentor office hours.</p></div></article>
       </div>
     </section>
 

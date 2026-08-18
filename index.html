@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CS Camp headquarters: live team standings, room details, CTF access, and camp resources.">
+  <title>CS Camp | HQ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cs.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="CS Camp home">
+      <span class="brand-mark">&lt;/&gt;</span>
+      <span>CS CAMP</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation">Menu</button>
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+      <a class="active" href="#rankings">Rankings</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#ctf">CTF &amp; Links</a>
+      <a href="#schedule">Schedule</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">WELCOME TO CAMP HQ <span class="live-dot">LIVE</span></p>
+        <!-- Change the camp name, dates, and welcome copy here. -->
+        <h1 id="hero-title">Welcome to <span>BCA.</span></h1>
+        <p class="hero-text">Your one-stop dashboard for team standings, room locations, challenges, and everything happening at CS Camp.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#rankings">View standings <span>↓</span></a>
+          <a class="button secondary" href="#ctf">Open CTF hub <span>↗</span></a>
+        </div>
+      </div>
+      <aside class="next-up" aria-label="Next event">
+        <p class="eyebrow">NEXT UP</p>
+        <!-- Edit this card with the current activity. -->
+        <h2>Capture the Flag</h2>
+        <p class="time">9:00 AM — 12:00 PM</p>
+        <p class="location">⌖ Comp Sci · Room 138</p>
+        <a href="#schedule">See full schedule →</a>
+      </aside>
+      <div class="hero-grid" aria-hidden="true"></div>
+    </section>
+
+    <section id="rankings" class="section" aria-labelledby="rankings-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SCOREBOARD</p>
+          <h2 id="rankings-title">Team rankings</h2>
+        </div>
+        <!-- Update the text below after scoring changes. -->
+        <p class="updated">Last updated: <strong>Tuesday, 6:30 AM</strong></p>
+      </div>
+
+      <div class="score-layout">
+        <div class="podium" aria-label="Top three teams">
+          <!--Team 2-->
+          <article class="podium-card second">
+            <span class="place">02</span><span class="medal">◆</span>
+            <h3>Team 2</h3><p>1,240 pts</p>
+          </article>
+          <!--Team 1-->
+          <article class="podium-card first">
+            <span class="place">01</span><span class="medal">★</span>
+            <h3>Team 1</h3><p>1,480 pts</p>
+          </article>
+          <!--Team 3-->
+          <article class="podium-card third">
+            <span class="place">03</span><span class="medal">●</span>
+            <h3>Team 3</h3><p>1,105 pts</p>
+          </article>
+        </div>
+
+        <div class="score-table-wrap">
+          <table class="score-table">
+            <caption class="sr-only">Current CS Camp team rankings</caption>
+            <thead><tr><th>Rank</th><th>Team</th><th>Points</th><th>Trend</th></tr></thead>
+            <tbody>
+              <!-- Add or remove team rows as needed. data-team makes the search work. -->
+              <tr data-team="Team 1"><td><span class="rank rank-one">1</span></td><td><strong>Team 1</strong></td><td>1,480</td><td><span class="trend up">↑ 2</span></td></tr>
+              <tr data-team="Team 2"><td><span class="rank">2</span></td><td><strong>Team 2</strong></td><td>1,240</td><td><span class="trend up">↑ 1</span></td></tr>
+              <tr data-team="Team 3"><td><span class="rank">3</span></td><td><strong>Team 3</strong></td><td>1,105</td><td><span class="trend down">↓ 1</span></td></tr>
+              <tr data-team="Team 4"><td><span class="rank">4</span></td><td><strong>Team 4</strong></td><td>980</td><td><span class="trend flat">—</span></td></tr>
+              <tr data-team="Team 5"><td><span class="rank">5</span></td><td><strong>Team 5</strong></td><td>875</td><td><span class="trend down">↓ 2</span></td></tr>
+            </tbody>
+          </table>
+          <p id="score-empty" class="empty-state" hidden>No matching team found.</p>
+        </div>
+      </div>
+      <div class="score-controls">
+        <label for="team-search" class="sr-only">Find a team</label>
+        <input id="team-search" type="search" placeholder="Find your team..." autocomplete="off">
+        <p>Points are awarded through challenges, teamwork, and camp spirit.</p>
+      </div>
+    </section>
+
+    <section id="rooms" class="section rooms-section" aria-labelledby="rooms-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">FIND YOUR WAY</p><h2 id="rooms-title">Room details</h2></div>
+        <p class="section-note">Tap a room for details.</p>
+      </div>
+      <div class="room-grid">
+        <!-- Duplicate a room-card to add more rooms. -->
+        <article class="room-card featured-room"><div class="room-number">138a</div><div><p class="room-type">HOME BASE</p><h3>Camp Central</h3><p>Check-in, announcements, and help desk.</p></div><button class="room-more" aria-label="Show Camp Central details">+</button><div class="room-detail">Open all day · Ask staff here for help or lost items.</div></article>
+        <article class="room-card"><div class="room-number">138b</div><div><p class="room-type">CHALLENGE ZONE</p><h3>Innovation Lab</h3><p>CTF, workshops, and team challenges.</p></div><button class="room-more" aria-label="Show Innovation Lab details">+</button><div class="room-detail">Bring your laptop and charger. CTF starts here at 2:00 PM.</div></article>
+        <article class="room-card"><div class="room-number">Lower Cafe</div><div><p class="room-type">CREATE</p><h3>Maker Studio</h3><p>Hardware, design, and creative builds.</p></div><button class="room-more" aria-label="Show Maker Studio details">+</button><div class="room-detail">Staff approval required before using tools or equipment.</div></article>
+        <article class="room-card"><div class="room-number">IDK</div><div><p class="room-type">FOCUS</p><h3>Quiet Corner</h3><p>Study space and mentor office hours.</p></div><button class="room-more" aria-label="Show Quiet Corner details">+</button><div class="room-detail">Please keep conversations low and respect the shared space.</div></article>
+      </div>
+    </section>
+
+    <section id="ctf" class="section resources-section" aria-labelledby="ctf-title">
+      <div class="section-heading"><div><p class="eyebrow">READY, SET, HACK*</p><h2 id="ctf-title">CTF &amp; camp links</h2></div><p class="section-note">*Ethically, of course.</p></div>
+      <div class="resource-grid">
+        <!-- Replace each # with the actual URL. These open in a new tab. -->
+        <a class="resource-card ctf-card" href="#" target="_blank" rel="noopener"><span class="resource-icon">⚑</span><div><p class="room-type">CHALLENGE PLATFORM</p><h3>Open the CTF</h3><p>Find flags, solve challenges, earn points.</p></div><span class="arrow">↗</span></a>
+        <a class="resource-card" href="#" target="_blank" rel="noopener"><span class="resource-icon">▣</span><div><p class="room-type">SHARED DRIVE</p><h3>Camp materials</h3><p>Slides, guides, and project files.</p></div><span class="arrow">↗</span></a>
+      </div>
+    </section>
+
+    <section id="schedule" class="section schedule-section" aria-labelledby="schedule-title">
+      <div class="section-heading"><div><p class="eyebrow">TODAY AT CAMP</p><h2 id="schedule-title">Schedule</h2></div><p class="section-note">Saturday · August 00</p></div>
+      <!-- Replace these sample events with your actual schedule. -->
+      <ol class="timeline">
+        <li><time>09:00</time><div><h3>Welcome &amp; kickoff</h3><p>Camp Central · Room 101</p></div></li>
+        <li><time>10:00</time><div><h3>Build workshop</h3><p>Maker Studio · Room 118</p></div></li>
+        <li class="current"><time>14:00</time><div><h3>Capture the Flag</h3><p>Innovation Lab · Room 204</p></div><span>NOW</span></li>
+        <li><time>16:15</time><div><h3>Team demos &amp; awards</h3><p>Camp Central · Room 101</p></div></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#top"><span class="brand-mark">&lt;/&gt;</span><span>CS CAMP</span></a><p>Bergen County Acadmies</p><a href="#top">Back to top ↑</a></footer>
+  <script src="cs.js"></script>
+</body>
+</html>
